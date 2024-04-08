@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Illuminate\Support\Str;
 
 class RegisteredUserController extends Controller
 {
@@ -32,15 +33,35 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:' . User::class],
+            'phonenumber' => ['required', 'string', 'unique:' . User::class],
+            'country' => ['required', 'string', 'max:255'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+        $uuid = Str::uuid();
+
+
+        /* $user = User::create([
+             'name' => $request->name,
+             'email' => $request->email,
+             'phonenumber' => $request->phonenumber,
+             'country' => $request->country,
+             $request->uuid = $uuid,
+             'password' => Hash::make($request->password),
+         ]); */
+
+        $password = Hash::make($request->password);
+
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phonenumber = $request->phonenumber;
+        $user->country = $request->country;
+        $user->uuid = $uuid;
+        $user->password = $password;
+        $user->save();
+
 
         event(new Registered($user));
 

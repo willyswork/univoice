@@ -4,19 +4,34 @@ namespace App\Http\Controllers;
 
 use App\Http\OtherServices\TaxBot;
 use App\Models\Settings;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class SettingsController extends Controller
 {
-    public function create()
+    public function profile()
     {
-        $tax = '16';
-        $user_currency = 'USD';
 
-        $settings = new Settings();
-        $settings->tax = $tax;
-        $settings->user_currency = $user_currency;
-        $settings->save();
+        // profile information to update
+
+        $name = "Willys Mwariri";
+        $phonenumber = "0700200200";
+        $email = "mwaririwillys@gmail.com";
+        $country = "Kenya";
+        // $user_image = "logo.png";
+
+
+
+
+
+
+        $settings = new User();
+        $settings->name = $name;
+        $settings->email = $email;
+        $settings->country = $country;
+        $settings->phonenumber = $phonenumber;
+
+        $settings->update();
         // $message = 'settings available';
 
 

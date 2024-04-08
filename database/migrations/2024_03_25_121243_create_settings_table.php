@@ -12,8 +12,7 @@ return new class extends Migration {
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('tax')->unique();
-            $table->string('user_currency');
+            $table->uuid('uuid')->unique();
             $table->timestamps();
         });
     }
