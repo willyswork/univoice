@@ -31,6 +31,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/settings', [SettingsController::class, 'create']);
+Route::get('/settings/store', [SettingsController::class, 'store']);
 Route::get('/clients', [ClientsController::class, 'create']);
 
 require __DIR__ . '/auth.php';

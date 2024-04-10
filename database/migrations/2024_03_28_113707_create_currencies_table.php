@@ -10,12 +10,12 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('taxes', function (Blueprint $table) {
+        Schema::create('currencies', function (Blueprint $table) {
             $table->id();
-            $table->uuid('uuid')->unique();
-            $table->foreignId('setting_id')->constrained('settings');
-            $table->string('tax_name');
-            $table->string('tax_percentage');
+            $table->uuid('uuid');
+            $table->foreignId('settings_id')->constrained('settings')->nullable();
+            $table->string('currency_name');
+            $table->string('currency');
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('taxes');
+        Schema::dropIfExists('currencies');
     }
 };

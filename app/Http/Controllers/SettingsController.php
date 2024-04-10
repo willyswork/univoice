@@ -9,6 +9,7 @@ use App\Models\Settings;
 use App\Models\Tax;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 
 class SettingsController extends Controller
@@ -17,31 +18,45 @@ class SettingsController extends Controller
     {
 
 
-        $tax = Tax::all();
-        $currency = Currency::all();
+        $tax = Settings::with("taxes")->get();
+        $currency = Settings::with("currencies")->get();
+        $bank = Settings::with("banks")->get();
+        $uuid = Auth::user()->uuid;
+        $profile = User::where('uuid',$uuid)->get();
 
 
 
 
-        return [$tax,$currency];
+
+
+        return [$tax,$currency,$bank,$profile];
     }
 
     public function store(){
+
+
+          //Settings
+          $settings = new Settings();
+          $settings->name = "Willys Settings";
+          $settings->uuid =Str::uuid();
+          $settings->user_id ="1";
+          $settings->save();
+
           // set profile information
 
-          $name = "Willys Mwariri";
+         /* $name = "Willys Mwariri";
           $phonenumber = "0700200200";
           $email = "mwaririwillys@gmail.com";
           $country = "Kenya";
           // $user_image = "logo.png";
 
-          $settings = new User();
-          $settings->name = $name;
-          $settings->email = $email;
-          $settings->country = $country;
-          $settings->phonenumber = $phonenumber;
+          $profile = new User();
+          $profile->name = $name;
+          $profile->email = $email;
+          $profile->country = $country;
+          $profile->phonenumber = $phonenumber;
 
-          $settings->update();
+          $profile->update();*/
 
 
 
@@ -50,6 +65,7 @@ class SettingsController extends Controller
           $tax = new Tax();
           $tax->tax_name = "VAT 16";
           $tax->tax_percentage = "16";
+          $tax->settings_id ="1";
           $tax->uuid = Str::uuid();
           $tax->save();
 
@@ -59,26 +75,29 @@ class SettingsController extends Controller
           $currency = new Currency();
           $currency->currency_name = "USD";
           $currency->currency = "$";
+          $currency->settings_id ="1";
           $currency->uuid = Str::uuid();
           $currency->save();
 
           //Banks Accounts settings
 
-         /* $bank = new Banks();
+         $bank = new Banks();
           $bank->bank_name = "Kenya Commercial Bank";
           $bank->bank_owner = "Willys Mwariri";
           $bank->bank_account = "12567389292";
           $bank->bank_country = "Kenya";
           $bank->bank_address = "Nairobi Westlands";
           $bank->bank_postal = "204";
-          $bank->save(); */
+          $bank->settings_id ="1";
+          $bank->uuid = Str::uuid();
+          $bank->save();
 
 
-          // $message = 'settings available';
+           $message = 'All settings set available';
 
 
 
-          return [$settings,$tax,$currency];
+          return [$settings,$tax,$currency,$bank, $message];
 
     }
 }
