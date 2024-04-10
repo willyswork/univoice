@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('banks', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid')->unique();
+            $table->foreignId('setting_id')->constrained('settings');
             $table->timestamps();
         });
     }

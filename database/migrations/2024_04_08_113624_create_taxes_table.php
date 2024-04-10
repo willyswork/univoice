@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('taxes', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
+            $table->foreignId('setting_id')->constrained('settings');
             $table->string('tax_name');
             $table->string('tax_percentage');
             $table->timestamps();

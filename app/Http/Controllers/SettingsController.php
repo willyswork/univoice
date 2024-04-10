@@ -9,60 +9,76 @@ use App\Models\Settings;
 use App\Models\Tax;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class SettingsController extends Controller
 {
     public function create()
     {
 
-        // set profile information
 
-        $name = "Willys Mwariri";
-        $phonenumber = "0700200200";
-        $email = "mwaririwillys@gmail.com";
-        $country = "Kenya";
-        // $user_image = "logo.png";
-
-        $settings = new User();
-        $settings->name = $name;
-        $settings->email = $email;
-        $settings->country = $country;
-        $settings->phonenumber = $phonenumber;
-
-        $settings->update();
+        $tax = Tax::all();
+        $currency = Currency::all();
 
 
 
-        //set tax
 
-        $tax = new Tax();
-        $tax->tax_name = "VAT 16";
-        $tax->tax_percentage = "16";
-        $tax->save();
+        return [$tax,$currency];
+    }
 
+    public function store(){
+          // set profile information
 
-        //set currency
+          $name = "Willys Mwariri";
+          $phonenumber = "0700200200";
+          $email = "mwaririwillys@gmail.com";
+          $country = "Kenya";
+          // $user_image = "logo.png";
 
-        $currency = new Currency();
-        $currency->currency_name = "USD";
-        $currency->currency = "$";
-        $currency->save();
+          $settings = new User();
+          $settings->name = $name;
+          $settings->email = $email;
+          $settings->country = $country;
+          $settings->phonenumber = $phonenumber;
 
-        //Banks Accounts settings
-
-        $bank = new Banks();
-        $bank->bank_name = "Kenya Commercial Bank";
-        $bank->bank_account = "12567389292";
-        $bank->bank_country = "Kenya";
-        $bank->bank_address = "Nairobi Westlands";
-        $bank->bank_postal = "204";
-        $bank->save();
-
-
-        // $message = 'settings available';
+          $settings->update();
 
 
 
-        return $settings;
+          //set tax
+
+          $tax = new Tax();
+          $tax->tax_name = "VAT 16";
+          $tax->tax_percentage = "16";
+          $tax->uuid = Str::uuid();
+          $tax->save();
+
+
+          //set currency
+
+          $currency = new Currency();
+          $currency->currency_name = "USD";
+          $currency->currency = "$";
+          $currency->uuid = Str::uuid();
+          $currency->save();
+
+          //Banks Accounts settings
+
+         /* $bank = new Banks();
+          $bank->bank_name = "Kenya Commercial Bank";
+          $bank->bank_owner = "Willys Mwariri";
+          $bank->bank_account = "12567389292";
+          $bank->bank_country = "Kenya";
+          $bank->bank_address = "Nairobi Westlands";
+          $bank->bank_postal = "204";
+          $bank->save(); */
+
+
+          // $message = 'settings available';
+
+
+
+          return [$settings,$tax,$currency];
+
     }
 }

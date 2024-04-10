@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('currencies', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid');
+            $table->foreignId('setting_id')->constrained('settings');
             $table->string('currency_name');
             $table->string('currency');
             $table->timestamps();
