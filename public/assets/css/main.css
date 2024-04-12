@@ -33,12 +33,12 @@ body.show-spinner::after {
 }
 
 .sidebar{
-    left:0px !important;
+    left:-200px !important;
 
 }
 .sidebar .navactive{
-   visibility: hidden !important;
-   left:-200px;
+
+   left:0px !important;
 }
 
 @keyframes spin {
