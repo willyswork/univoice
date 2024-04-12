@@ -52,7 +52,7 @@
 
 
 
-    {{$scripts ?? ""}}
+
 
 
     <script src="{{ asset('assets/js/vendor/jquery-3.3.1.min.js') }}"></script>
@@ -73,6 +73,9 @@
     <script src="{{ asset('assets/js/vendor/glide.min.js') }}"></script>
     <script src="{{ asset('assets/js/dore.script.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
+
+    {{$scripts ?? ""}}
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top">
     <div class="d-flex align-items-center navbar-left">
-        <a href="#" class="menu-button d-none d-md-block">
+        <a href="#" class="menu-button d-none d-md-block toggle-btn">
             <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
                 <rect x="0.48" y="0.5" width="7" height="1" />
                 <rect x="0.48" y="7.5" width="7" height="1" />
@@ -13,7 +13,7 @@
             </svg>
         </a>
 
-        <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+        <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none toggle-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
                 <rect x="0.5" y="0.5" width="25" height="1" />
                 <rect x="0.5" y="7.5" width="25" height="1" />

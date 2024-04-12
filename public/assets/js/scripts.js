@@ -41,7 +41,7 @@ function loadStyle(href, callback) {
   try {
     var isPrivateTab = false;
     localStorage.setItem("dore-is-private-tab", isPrivateTab);
-    var themeColorsDom = /*html*/`
+    /*var themeColorsDom = `
   <div class="theme-colors">
     <div class="p-4">
     <p class="text-muted mb-2">Light Theme</p>
@@ -99,14 +99,14 @@ function loadStyle(href, callback) {
 </div>
 <a href="#" class="theme-button"> <i class="simple-icon-magic-wand"></i> </a>
 </div>
-`;
+`*/;
 
    // $("body").append(themeColorsDom);
   } catch (error) {}
 
 
   /* Default Theme Color, Border Radius and  Direction */
-  var theme = "dore.light.bluenavy.min.css";
+ /* var theme = "dore.light.bluenavy.min.css";
   var direction = "ltr";
   var radius = "rounded";
 
@@ -193,7 +193,7 @@ function loadStyle(href, callback) {
     $(this)
       .parents(".theme-colors")
       .toggleClass("shown");
-  });
+  });*/
 
   $(document).on("click", function (event) {
     if (
@@ -212,5 +212,9 @@ function loadStyle(href, callback) {
         $(".theme-colors").removeClass("shown");
       }
     }
+
+
+
+
   });
 })(jQuery);

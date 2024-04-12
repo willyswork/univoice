@@ -32,6 +32,15 @@ body.show-spinner::after {
   z-index: 1;
 }
 
+.sidebar{
+    left:0px !important;
+
+}
+.sidebar .navactive{
+   visibility: hidden !important;
+   left:-200px;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);

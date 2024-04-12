@@ -1,4 +1,5 @@
-<div class="menu">
+<aside>
+<div class="menu sidebar">
     <div class="main-menu">
         <div class="scroll">
             <ul class="list-unstyled">
@@ -46,3 +47,22 @@
 
 
 </div>
+</aside>
+
+
+<x-slot name="scripts">
+    <script>
+
+    $('.toggle-btn').click(function(){
+
+
+$('.sidebar').toggleClass('navactive');
+console.log('toggler active clicked');
+
+ });
+        </script>
+</x-slot>
+
+
+
+
