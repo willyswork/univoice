@@ -10,11 +10,12 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('settings', function (Blueprint $table) {
+        Schema::create('currencies', function (Blueprint $table) {
             $table->id();
-            $table->uuid('uuid')->unique();
-            $table->string('name');
-            $table->foreignId('user_id')->constrained('users');
+            $table->uuid('uuid');
+            $table->foreignId('settings_id')->constrained('settings')->nullable();
+            $table->string('currency_name');
+            $table->string('currency');
             $table->timestamps();
         });
     }
@@ -24,6 +25,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('settings');
+        Schema::dropIfExists('currencies');
     }
 };

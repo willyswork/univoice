@@ -1,4 +1,4 @@
-/* Dore Theme Select & Initializer Script 
+/* Dore Theme Select & Initializer Script
 
 Table of Contents
 
@@ -101,7 +101,7 @@ function loadStyle(href, callback) {
 </div>
 `;
 
-    $("body").append(themeColorsDom);
+   // $("body").append(themeColorsDom);
   } catch (error) {}
 
 

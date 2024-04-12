@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Banks extends Model
 {
     use HasFactory;
+
+    public function settings(){
+        return $this->belongsTo(Settings::class);
+    }
+
+
 }
