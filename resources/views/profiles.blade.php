@@ -1,7 +1,11 @@
 <x-app-layout>
 
+    <x-slot name="titles">
+        Profile Settings
+       </x-slot>
+
     <x-sidebar/>
-    <x-sub-menu/>
+
 <main>
     <div class="container-fluid">
         <div class="row">
@@ -118,39 +122,39 @@
                                         <form>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">First Name</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                                                    <label for="first_name">First Name</label>
+                                                    <input type="text" class="form-control" id="first_name" placeholder="First Name">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Surname</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Surname">
+                                                    <label for="surname">Surname</label>
+                                                    <input type="text" class="form-control" id="surname" placeholder="Surname">
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                                    <label for="email">Email</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Email">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Phone Number</label>
-                                                    <input type="tel" class="form-control" id="inputEmail4" placeholder="Phone Number">
+                                                    <label for="phone_number">Phone Number</label>
+                                                    <input type="tel" class="form-control" id="phone_number" placeholder="Phone Number">
                                                 </div>
 
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputAddress">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress"
+                                                <label for="address">Address</label>
+                                                <input type="text" class="form-control" id="address"
                                                     placeholder="1234 Main St">
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity">City</label>
-                                                    <input type="text" class="form-control" id="inputCity">
+                                                    <label for="city">City</label>
+                                                    <input type="text" class="form-control" id="city">
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label for="inputState">State</label>
-                                                    <select id="inputState" class="form-control">
+                                                    <label for="state">State</label>
+                                                    <select id="state" class="form-control">
                                                         <option value="Afghanistan">Afghanistan</option>
                                                         <option value="Åland Islands">Åland Islands</option>
                                                         <option value="Albania">Albania</option>
@@ -510,33 +514,33 @@
                                         <form>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Business/Company/Organization Name</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                                                    <label for="organization_name">Business/Company/Organization Name</label>
+                                                    <input type="text" class="form-control" id="organization_name" placeholder="First Name">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Initials of the business name (abbreviation) </label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. SA">
+                                                    <label for="organisation_initials">Initials of the business name (abbreviation) </label>
+                                                    <input type="text" class="form-control" id="organisation_initials" placeholder="Eg. SA">
                                                 </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Business email address</label>
-                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Business Email">
+                                                    <label for="organization_email">Business email address</label>
+                                                    <input type="email" class="form-control" id="organization_email" placeholder="Business Email">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Business phone number</label>
-                                                    <input type="tel" class="form-control" id="inputEmail4" placeholder="Business Phone Number">
+                                                    <label for="organization_number">Business phone number</label>
+                                                    <input type="tel" class="form-control" id="organization_number" placeholder="Business Phone Number">
                                                 </div>
 
                                             </div>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">KRA PIN</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. A0PW2Y...">
+                                                    <label for="kra_pin">KRA PIN</label>
+                                                    <input type="text" class="form-control" id="kra_pin" placeholder="Eg. A0PW2Y...">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">TAX ID or V.A.T No.</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="TAX ID or V.A.T No.">
+                                                    <label for="tax_id">TAX ID or V.A.T No.</label>
+                                                    <input type="text" class="form-control" id="tax_id" placeholder="TAX ID or V.A.T No.">
                                                 </div>
 
 
@@ -544,12 +548,12 @@
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Website Url</label>
-                                                    <input type="text" class="form-control" id="inputEmail4" placeholder="https:://www.example.com">
+                                                    <label for="website_url">Website Url</label>
+                                                    <input type="text" class="form-control" id="website_url" placeholder="https:://www.example.com">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputEmail4">Mpesa Payment Details</label>
-                                                    <textarea type="text" id="inputEmail4" class="form-control"  >
+                                                    <label for="payment_details">Mpesa Payment Details</label>
+                                                    <textarea type="text" id="payment_details" class="form-control"  >
 
                                                     </textarea>
                                                 </div>
@@ -557,19 +561,19 @@
 
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputAddress">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress"
+                                                <label for="business_address">Address</label>
+                                                <input type="text" class="form-control" id="business_address"
                                                     placeholder="1234 Main St">
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputCity">City</label>
-                                                    <input type="text" class="form-control" id="inputCity" placeholder="Eg. Nairobi">
+                                                    <label for="business_city">City</label>
+                                                    <input type="text" class="form-control" id="business_city" placeholder="Eg. Nairobi">
                                                 </div>
                                                 <div class="form-group col-md-4">
-                                                    <label for="inputState">State</label>
-                                                    <select id="inputState" class="form-control">
+                                                    <label for="business_state">State</label>
+                                                    <select id="business_state" class="form-control">
                                                             <option value="Afghanistan">Afghanistan</option>
                                                             <option value="Åland Islands">Åland Islands</option>
                                                             <option value="Albania">Albania</option>
@@ -817,8 +821,8 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-md-2">
-                                                    <label for="inputZip">Zip</label>
-                                                    <input type="text" class="form-control" id="inputZip" placeholder="Eg. 01000-90130">
+                                                    <label for="zip_code">Zip</label>
+                                                    <input type="text" class="form-control" id="zip_code" placeholder="Eg. 01000-90130">
                                                 </div>
                                             </div>
 
@@ -850,12 +854,12 @@
                                             <form>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4">Password</label>
-                                                        <input type="password" class="form-control" id="inputEmail4" placeholder="Password">
+                                                        <label for="password">Password</label>
+                                                        <input type="password" class="form-control" id="password" placeholder="Password">
                                                     </div>
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputEmail4">Confirm Password</label>
-                                                        <input type="password" class="form-control" id="inputEmail4" placeholder="Confirm password">
+                                                        <label for="confirm_password">Confirm Password</label>
+                                                        <input type="password" class="form-control" id="confirm_password" placeholder="Confirm password">
                                                     </div>
                                                 </div>
 
