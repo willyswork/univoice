@@ -26,7 +26,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Add Currency</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel"> Add Currency</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -38,8 +38,8 @@
                                                                 <form>
 
                                                                         <div class="form-group col-md-12">
-                                                                            <label for="inputEmail4">Currency Name</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. V.A.T">
+                                                                            <label for="currency_name">Currency Name</label>
+                                                                            <input type="text" class="form-control" id="currency_name" placeholder="Eg. Dollar">
                                                                         </div>
                                                                         <div class="form-group col-md-12">
                                                                             <label for="inputState">Currency Type</label>
@@ -240,7 +240,7 @@
                                         </div>
 
                                         <div class="mb-2">
-                                            <a class="btn pt-0 pl-0 d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions"
+                                            <a class="btn pt-2 pl-1  d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions"
                                                 role="button" aria-expanded="true" aria-controls="displayOptions">
                                                 Display Options
                                                 <i class="simple-icon-arrow-down align-middle"></i>
@@ -296,7 +296,7 @@
 
 
 
-                <div class="row mb-4 overflow-y-scroll">
+                <div class="row mb-4 overflow-x-scroll">
                     <div class="col-12 data-tables-hide-filter">
                         <div class="card">
                             <div class="card-body">
@@ -307,20 +307,20 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Name</th>
-                                            <th>Percentage(%)</th>
+                                            <th>Currency Type</th>
                                             <th></th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="overflow-y-auto overflow-x-auto">
                                         <tr>
                                             <td>
                                                 <p>1.</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted">VAT</p>
+                                                <p class="text-muted">Dollar</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted">16</p>
+                                                <p class="text-muted">USD</p>
                                             </td>
                                             <td>
                                                 <div class="btn-group  mb-1">
