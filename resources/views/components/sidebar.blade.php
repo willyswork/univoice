@@ -1,5 +1,5 @@
-<aside>
-<div class="menu sidebar navactive">
+
+<div class="menu sidebar ">
     <div class="main-menu">
         <div class="scroll">
             <ul class="list-unstyled">
@@ -7,6 +7,11 @@
                     <a href="#dashboard">
                         <i class="iconsminds-shop-4"></i>
                         <span>Dashboards</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#products">
+                        <i class="iconsminds-shopping-cart"></i> Products
                     </a>
                 </li>
                 <li>
@@ -31,13 +36,13 @@
                 </li>
 
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="#documentation" >
                         <i class="iconsminds-library"></i> Docs
                     </a>
                 </li>
 
                 <li>
-                    <a href="Blank.Page.html">
+                    <a href="#logout">
                         <i class="iconsminds-right"></i> Log Out
                     </a>
                 </li>
@@ -45,26 +50,13 @@
         </div>
     </div>
 
+    <x-sub-menu/>
 
 </div>
-</aside>
 
 
-<x-slot name="scripts">
-    <script>
-   $(document).ready(function(){
-
-    $(".toggle-btn").click(function(){
 
 
-$(".sidebar").toggleClass("navactive");
-console.log("toggler active clicked");
-
- });
-   });
-
-        </script>
-</x-slot>
 
 
 

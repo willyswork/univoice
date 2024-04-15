@@ -1,6 +1,6 @@
 <div class="sub-menu">
     <div class="scroll">
-        <ul class="list-unstyled" data-link="dashboard">
+       <!-- <ul class="list-unstyled" data-link="dashboard">
             <li>
                 <a href="Dashboard.Default.html">
                     <i class="simple-icon-rocket"></i> <span class="d-inline-block">Default</span>
@@ -21,172 +21,134 @@
                     <i class="simple-icon-doc"></i> <span class="d-inline-block">Content</span>
                 </a>
             </li>
-        </ul>
-        <ul class="list-unstyled" data-link="layouts" id="layouts">
+        </ul>--->
+        <ul class="list-unstyled" data-link="billing" id="billing">
             <li>
-                <a href="#" data-toggle="collapse" data-target="#collapseAuthorization" aria-expanded="true"
-                    aria-controls="collapseAuthorization" class="rotate-arrow-icon opacity-50">
-                    <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Authorization</span>
+                <a href="#">
+                    <i class="simple-icon-diamond"></i> <span class="d-inline-block">Invoices</span>
                 </a>
-                <div id="collapseAuthorization" class="collapse show">
-                    <ul class="list-unstyled inner-level-menu">
-                        <li>
-                            <a href="Pages.Auth.Login.html">
-                                <i class="simple-icon-user-following"></i> <span
-                                    class="d-inline-block">Login</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Auth.Register.html">
-                                <i class="simple-icon-user-follow"></i> <span
-                                    class="d-inline-block">Register</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Auth.ForgotPassword.html">
-                                <i class="simple-icon-user-unfollow"></i> <span class="d-inline-block">Forgot
-                                    Password</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
             <li>
-                <a href="#" data-toggle="collapse" data-target="#collapseProduct" aria-expanded="true"
-                    aria-controls="collapseProduct" class="rotate-arrow-icon opacity-50">
-                    <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Product</span>
+                <a href="#">
+                    <i class="simple-icon-drawer"></i> <span class="d-inline-block">Receipts</span>
                 </a>
-                <div id="collapseProduct" class="collapse show">
-                    <ul class="list-unstyled inner-level-menu">
-                        <li>
-                            <a href="Pages.Product.List.html">
-                                <i class="simple-icon-credit-card"></i> <span class="d-inline-block">Data
-                                    List</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Product.Thumbs.html">
-                                <i class="simple-icon-list"></i> <span class="d-inline-block">Thumb
-                                    List</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Product.Images.html">
-                                <i class="simple-icon-grid"></i> <span class="d-inline-block">Image
-                                    List</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Product.Detail.html">
-                                <i class="simple-icon-book-open"></i> <span class="d-inline-block">Detail</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
             <li>
-                <a href="#" data-toggle="collapse" data-target="#collapseProfile" aria-expanded="true"
-                    aria-controls="collapseProfile" class="rotate-arrow-icon opacity-50">
-                    <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Profile</span>
+                <a href="#">
+                    <i class="simple-icon-docs"></i> <span class="d-inline-block">Quotations</span>
                 </a>
-                <div id="collapseProfile" class="collapse show">
-                    <ul class="list-unstyled inner-level-menu">
-                        <li>
-                            <a href="Pages.Profile.Social.html">
-                                <i class="simple-icon-share"></i> <span class="d-inline-block">Social</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Profile.Portfolio.html">
-                                <i class="simple-icon-link"></i> <span class="d-inline-block">Portfolio</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </li>
-            <li>
-                <a href="#" data-toggle="collapse" data-target="#collapseBlog" aria-expanded="true"
-                    aria-controls="collapseBlog" class="rotate-arrow-icon opacity-50">
-                    <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Blog</span>
-                </a>
-                <div id="collapseBlog" class="collapse show">
-                    <ul class="list-unstyled inner-level-menu">
-                        <li>
-                            <a href="Pages.Blog.html">
-                                <i class="simple-icon-list"></i> <span class="d-inline-block">List</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Blog.Detail.html">
-                                <i class="simple-icon-book-open"></i> <span class="d-inline-block">Detail</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Blog.Detail.Alt.html">
-                                <i class="simple-icon-picture"></i> <span class="d-inline-block">Detail
-                                    Alt</span>
-                            </a>
-                        </li>
+
                     </ul>
-                </div>
-            </li>
-            <li>
-                <a href="#" data-toggle="collapse" data-target="#collapseMisc" aria-expanded="true"
-                    aria-controls="collapseMisc" class="rotate-arrow-icon opacity-50">
-                    <i class="simple-icon-arrow-down"></i> <span class="d-inline-block">Miscellaneous</span>
-                </a>
-                <div id="collapseMisc" class="collapse show">
-                    <ul class="list-unstyled inner-level-menu">
+
+
+                    <ul class="list-unstyled" data-link="products" id="products">
                         <li>
-                            <a href="Pages.Misc.Coming.Soon.html">
-                                <i class="simple-icon-hourglass"></i> <span class="d-inline-block">Coming
-                                    Soon</span>
+                            <a href="#">
+                                <i class="simple-icon-bag"></i> <span class="d-inline-block">Products</span>
                             </a>
                         </li>
                         <li>
-                            <a href="Pages.Misc.Error.html">
-                                <i class="simple-icon-exclamation"></i> <span
-                                    class="d-inline-block">Error</span>
+                            <a href="#">
+                                <i class="simple-icon-grid"></i> <span class="d-inline-block">Product Categories</span>
                             </a>
                         </li>
                         <li>
-                            <a href="Pages.Misc.Faq.html">
-                                <i class="simple-icon-question"></i> <span class="d-inline-block">Faq</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Misc.Invoice.html">
-                                <i class="simple-icon-bag"></i> <span class="d-inline-block">Invoice</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Misc.Knowledge.Base.html">
-                                <i class="simple-icon-graduation"></i> <span class="d-inline-block">Knowledge
-                                    Base</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Misc.Mailing.html">
-                                <i class="simple-icon-envelope-open"></i> <span
-                                    class="d-inline-block">Mailing</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Misc.Pricing.html">
-                                <i class="simple-icon-diamond"></i> <span class="d-inline-block">Pricing</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Pages.Misc.Search.html">
-                                <i class="simple-icon-magnifier"></i> <span class="d-inline-block">Search</span>
+                            <a href="#">
+                                <i class="simple-icon-calculator"></i> <span class="d-inline-block">Product Units</span>
                             </a>
                         </li>
 
+                                </ul>
+
+
+
+
+
+
+
+        <ul class="list-unstyled" data-link="reports" id="reports">
+            <li>
+                <a href="#">
+                    <i class="simple-icon-graph"></i> <span class="d-inline-block">Activity Summary</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-chart"></i> <span class="d-inline-block">Sales Summary</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-bag"></i> <span class="d-inline-block">Stock Summary</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-tag"></i> <span class="d-inline-block">Purchase Summary</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-basket"></i> <span class="d-inline-block">Supplier Summary</span>
+                </a>
+            </li>
                     </ul>
-                </div>
+
+
+
+
+
+
+
+        <ul class="list-unstyled" data-link="settings" id="settings">
+            <li>
+                <a href="#">
+                    <i class="simple-icon-calculator"></i> <span class="d-inline-block">Tax Types</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-flag"></i> <span class="d-inline-block">Currency</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="simple-icon-credit-card"></i> <span class="d-inline-block">Payment Mode</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-settings"></i> <span class="d-inline-block">Profile Settings</span>
+                </a>
             </li>
         </ul>
-        <ul class="list-unstyled" data-link="applications">
+
+        <ul class="list-unstyled" data-link="documentation" id="documantation">
+            <li>
+                <a href="#">
+                    <i class="simple-icon-book-open"></i> <span class="d-inline-block">Help Guide</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-organization"></i> <span class="d-inline-block">API Guide</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="simple-icon-exclamation"></i> <span class="d-inline-block">About Univoice</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="simple-icon-bubbles"></i> <span class="d-inline-block">Help Center</span>
+                </a>
+            </li>
+        </ul>
+        <!--<ul class="list-unstyled" data-link="billing">
             <li>
                 <a href="Apps.MediaLibrary.html">
                     <i class="simple-icon-picture"></i> <span class="d-inline-block">Library</span>
@@ -380,7 +342,7 @@
 
         </ul>
 
-        <ul class="list-unstyled" data-link="menu" id="menuTypes">
+        <ul class="list-unstyled" data-link="reports" id="menuTypes">
             <li>
                 <a href="#" data-toggle="collapse" data-target="#collapseMenuTypes" aria-expanded="true"
                     aria-controls="collapseMenuTypes" class="rotate-arrow-icon">
@@ -472,7 +434,7 @@
                     </a>
                 </div>
             </li>
-        </ul>
+        </ul>-->
 
     </div>
 </div>

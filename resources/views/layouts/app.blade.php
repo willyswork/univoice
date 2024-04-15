@@ -7,7 +7,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ $titles ?? ''}}</title>
+    <title>{{ $titles ?? ""}}</title>
 
     <!-- Links -->
     <link rel="stylesheet" href="{{ asset('assets/font/iconsmind-s/css/iconsminds.css') }}" />
@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.rtl.only.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/component-custom-switch.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/perfect-scrollbar.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/dore.light.bluenavy.min.css')}}" />
+
 
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/fullcalendar.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/dropzone.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/dataTables.bootstrap4.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/datatables.responsive.bootstrap4.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2.min.css') }}" />
@@ -88,6 +89,7 @@
     <script src="{{ asset('assets/js/vendor/nouislider.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/Sortable.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/dropzone.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/mousetrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/glide.min.js') }}"></script>
     <script src="assets/js/dore.script.js"></script>

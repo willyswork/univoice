@@ -32,14 +32,7 @@ body.show-spinner::after {
   z-index: 1;
 }
 
-.sidebar{
-    left:-200px !important;
 
-}
-.sidebar .navactive{
-
-   left:0px !important;
-}
 
 @keyframes spin {
   to {

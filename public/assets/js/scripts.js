@@ -41,7 +41,7 @@ function loadStyle(href, callback) {
   try {
     var isPrivateTab = false;
     localStorage.setItem("dore-is-private-tab", isPrivateTab);
-    /*var themeColorsDom = `
+    var themeColorsDom = `
   <div class="theme-colors">
     <div class="p-4">
     <p class="text-muted mb-2">Light Theme</p>
@@ -97,16 +97,16 @@ function loadStyle(href, callback) {
     <label class="custom-control-label" for="rtlRadio">Rtl</label>
   </div>
 </div>
-<a href="#" class="theme-button"> <i class="simple-icon-magic-wand"></i> </a>
+<a href="#" class="theme-button"> <i class="simple-icon-equalizer"></i> </a>
 </div>
-`*/;
+`;
 
-   // $("body").append(themeColorsDom);
+ $("body").append(themeColorsDom);
   } catch (error) {}
 
 
   /* Default Theme Color, Border Radius and  Direction */
- /* var theme = "dore.light.bluenavy.min.css";
+  var theme = "dore.light.bluenavy.min.css";
   var direction = "ltr";
   var radius = "rounded";
 
@@ -137,7 +137,7 @@ function loadStyle(href, callback) {
   $(".radius-radio[data-radius='" + radius + "']").attr("checked", true);
   $("#switchDark").attr("checked", theme.indexOf("dark") > 0 ? true : false);
 
-  loadStyle("css/" + theme, onStyleComplete);
+  loadStyle("assets/css/" + theme, onStyleComplete);
   function onStyleComplete() {
     setTimeout(onStyleCompleteDelayed, 300);
   }
@@ -193,7 +193,7 @@ function loadStyle(href, callback) {
     $(this)
       .parents(".theme-colors")
       .toggleClass("shown");
-  });*/
+  });
 
   $(document).on("click", function (event) {
     if (

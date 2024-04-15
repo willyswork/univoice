@@ -22,7 +22,24 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+});
+Route::get('/settings', function () {
+    return view('profiles');
+});
+Route::get('/tax', function () {
+    return view('tax');
+});
+Route::get('/currency', function () {
+    return view('currency');
+});
+
+Route::get('/payment', function () {
+    return view('payment');
+});
+
+/*Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');*/
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -30,8 +47,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/settings', [SettingsController::class, 'create']);
-Route::get('/settings/store', [SettingsController::class, 'store']);
-Route::get('/clients', [ClientsController::class, 'create']);
+//Route::get('/settings', [SettingsController::class, 'create']);
+//Route::get('/settings/store', [SettingsController::class, 'store']);
+//Route::get('/clients', [ClientsController::class, 'create']);
 
 require __DIR__ . '/auth.php';
