@@ -79,7 +79,7 @@
 
 
 
-                                <div class="card mb-4 d-none d-lg-block">
+                                <div class="card mb-4 d-none d-block">
                                     <div class="position-absolute card-top-buttons">
                                         <button class="btn btn-header-light icon-button">
                                             <i class="simple-icon-refresh"></i>
@@ -150,7 +150,7 @@
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="city">City</label>
-                                                    <input type="text" class="form-control" id="city">
+                                                    <input type="text" class="form-control" id="city" placeholder="Eg. Nairobi">
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="state">State</label>
@@ -403,7 +403,7 @@
                                                 </div>
                                                 <div class="form-group col-md-2">
                                                     <label for="inputZip">Zip</label>
-                                                    <input type="text" class="form-control" id="inputZip">
+                                                    <input type="text" class="form-control" id="inputZip" placeholder="Eg. 01000-90130">
                                                 </div>
                                             </div>
 
@@ -430,7 +430,7 @@
                             </div>
                             <div class="col-12 col-lg-5 col-xl-4 col-left">
                                 <a href="assets/img/profiles/1.jpg" class="lightbox">
-                                    <img alt="Profile" src="{{ asset('assets/img/profiles/l-1.jpg') }}"
+                                    <img alt="Profile" src="{{ asset('assets/img/profiles/company.jpeg') }}"
                                         class="img-thumbnail card-img social-profile-img">
                                 </a>
 
@@ -471,7 +471,7 @@
 
 
 
-                                <div class="card mb-4 d-none d-lg-block">
+                                <div class="card mb-4 d-none d-block">
                                     <div class="position-absolute card-top-buttons">
                                         <button class="btn btn-header-light icon-button">
                                             <i class="simple-icon-refresh"></i>
