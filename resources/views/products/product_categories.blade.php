@@ -2,7 +2,7 @@
 
 
     <x-slot name="titles">
-        Payment Settings
+        Product Category
        </x-slot>
     <x-sidebar/>
 
@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="mb-2">
-                        <h1>Payment Modes</h1>
+                        <h1>Product Categories</h1>
                         <div class="top-right-button-container">
                             <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" data-toggle="modal"
                             data-target="#addTax"> <i class="simple-icon-plus align-middle"></i> ADD NEW</button>
@@ -27,7 +27,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Add Payment Mode</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -35,61 +35,31 @@
                                                     <div class="modal-body">
 
 
-                                                        <ul class="nav nav-tabs separator-tabs ml-0 mb-5" role="tablist">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab"
-                                                                    aria-controls="first" aria-selected="true">BANK ACCOUNT</a>
-                                                            </li>
 
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab"
-                                                                    aria-controls="second" aria-selected="false">MPESA ACCOUNT</a>
-                                                            </li>
 
-                                                        </ul>
 
-                                                        <div class="tab-content">
-                                                            <div class="tab-pane show active overflow-scroll" id="first" role="tabpanel" aria-labelledby="first-tab">
+                                                            <div>
                                                                 <form>
 
                                                                         <div class="form-group col-md-12">
-                                                                            <label for="inputEmail4">Bank Name</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. KCB">
+                                                                            <label >Category Name</label>
+                                                                            <input type="text" class="form-control" id="category_name" placeholder="Eg. Phones">
                                                                         </div>
-                                                                        <div class="form-group col-md-12">
-                                                                            <label for="inputEmail4">Bank Account Owner</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. John Doe">
-                                                                        </div>
-                                                                        <div class="form-group col-md-12">
-                                                                            <label for="inputState">Bank Account No.</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. 123252572767">
-                                                                        </div>
+
+
+
+
+
 
 
 
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
                                                             data-dismiss="modal">Close</button>
-                                                        <button type="submit" class="btn btn-primary">Add Bank Account</button>
+                                                        <button type="submit" class="btn btn-primary">Add Category</button>
                                                      </form>
                                                     </div>
                                                 </div>
-
-                                                    <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-
-                                                        <h5 >Coming Soon !</h5>
-
-
-
-
-
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-
-
-                                        </div>
 
 
                                                     </div>
@@ -184,8 +154,7 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Name</th>
-                                            <th>Percentage(%)</th>
+                                            <th>Category Name</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -195,11 +164,10 @@
                                                 <p>1.</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted">VAT</p>
+                                                <p class="text-muted">Iphones</p>
                                             </td>
-                                            <td>
-                                                <p class="text-muted">16</p>
-                                            </td>
+
+
                                             <td>
                                                 <div class="btn-group  mb-1">
 

@@ -24,19 +24,34 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 Route::get('/settings', function () {
-    return view('profiles');
+    return view('profile.profiles');
 });
 Route::get('/tax', function () {
-    return view('tax');
+    return view('settings.tax');
 });
 Route::get('/currency', function () {
-    return view('currency');
+    return view('settings.currency');
 });
 
 Route::get('/payment', function () {
-    return view('payment');
+    return view('settings.payment');
+});
+Route::get('/clients', function () {
+    return view('clients.clients');
 });
 
+
+Route::get('/products', function () {
+    return view('products.products');
+});
+
+Route::get('/products_categories', function () {
+    return view('products.product_categories');
+});
+
+Route::get('/products_units', function () {
+    return view('products.product_units');
+});
 
 /*Route::get('/dashboard', function () {
     return view('dashboard');
