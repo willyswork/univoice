@@ -207,7 +207,7 @@
                                                 <p>1.</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted rounded-circle"><img class="img-fluid  rounded mx-auto"  src="assets/img/profiles/1.jpg" height="50" width="50"/></p>
+                                                <p class="text-muted rounded-circle"><img class="img-thumbnail list-thumbnail xsmall border-0"  src="assets/img/profiles/1.jpg" height="50" width="50"/></p>
                                             </td>
                                             <td>
                                                 <p class="text-muted">Iphone 6 plus</p>

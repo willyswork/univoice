@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.rtl.only.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/component-custom-switch.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/perfect-scrollbar.css')}}" />
-
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2-bootstrap.min.css')}}" />
 
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/fullcalendar.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/dropzone.min.css') }}" />

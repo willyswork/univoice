@@ -196,7 +196,7 @@
                                                 <p>1.</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted"><img class="rounded-circle" src="assets/img/profiles/company.jpeg" height="30"/></p>
+                                                <p class="text-muted"><img class="img-thumbnail list-thumbnail xsmall border-0 rounded-circle" src="assets/img/profiles/company.jpeg" height="30"/></p>
                                             </td>
                                             <td>
                                                 <p class="text-muted">Startappz Limited</p>

@@ -53,6 +53,45 @@ Route::get('/products_units', function () {
     return view('products.product_units');
 });
 
+Route::get('/invoices', function () {
+    return view('billings.invoices.list');
+});
+Route::get('/invoices_create', function () {
+    return view('billings.invoices.create');
+});
+
+Route::get('/invoices_preview', function () {
+    return view('billings.invoices.preview');
+});
+
+
+Route::get('/receipts', function () {
+    return view('billings.receipts.list');
+});
+Route::get('/receipts_create', function () {
+    return view('billings.receipts.create');
+});
+
+Route::get('/quotations', function () {
+    return view('billings.quotations.list');
+});
+Route::get('/quotations_create', function () {
+    return view('billings.quotations.create');
+});
+Route::get('/reports_activity', function () {
+    return view('reports.activity.view');
+});
+Route::get('/reports_sales', function () {
+    return view('reports.sales.view');
+});
+Route::get('/reports_purchase', function () {
+    return view('reports.purchase.view');
+});
+Route::get('/reports_stock', function () {
+    return view('reports.stock.view');
+});
+
+
 /*Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');*/

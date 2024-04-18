@@ -2,7 +2,7 @@
 
 
     <x-slot name="titles">
-        Payment Settings
+        Quotations
        </x-slot>
     <x-sidebar/>
 
@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="mb-2">
-                        <h1>Payment Modes</h1>
+                        <h1>Quotations</h1>
                         <div class="top-right-button-container">
                             <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" data-toggle="modal"
                             data-target="#addTax"> <i class="simple-icon-plus align-middle"></i> ADD NEW</button>
@@ -27,7 +27,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Add Payment Mode</h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Add Client</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -35,34 +35,48 @@
                                                     <div class="modal-body">
 
 
-                                                        <ul class="nav nav-tabs separator-tabs ml-0 mb-5" role="tablist">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab"
-                                                                    aria-controls="first" aria-selected="true">BANK ACCOUNT</a>
-                                                            </li>
 
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab"
-                                                                    aria-controls="second" aria-selected="false">MPESA ACCOUNT</a>
-                                                            </li>
 
-                                                        </ul>
 
-                                                        <div class="tab-content">
-                                                            <div class="tab-pane show active overflow-scroll" id="first" role="tabpanel" aria-labelledby="first-tab">
+                                                            <div >
                                                                 <form>
 
                                                                         <div class="form-group col-md-12">
-                                                                            <label for="inputEmail4">Bank Name</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. KCB">
+                                                                            <label for="client_name">Individual/Company/Organization Name</label>
+                                                                            <input type="text" class="form-control" id="client_name" placeholder="Eg. John Doe, Startappz Limited">
                                                                         </div>
                                                                         <div class="form-group col-md-12">
-                                                                            <label for="inputEmail4">Bank Account Owner</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. John Doe">
+                                                                            <label for="client_email">Individual/Company/Organization Email</label>
+                                                                            <input type="email" class="form-control" id="client_email" placeholder="Eg. johndoe@gmail.com">
                                                                         </div>
                                                                         <div class="form-group col-md-12">
-                                                                            <label for="inputState">Bank Account No.</label>
-                                                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Eg. 123252572767">
+                                                                            <label for="client_address">Individual/Company/Organization Address</label>
+                                                                            <input type="text" class="form-control" id="client_address" placeholder="Eg. 123 Saint Str">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="client_phone">Individual/Company/Organization Phone Number</label>
+                                                                            <input type="tel" class="form-control" id="client_phone" placeholder="Eg. 0700000000">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="client_kra">KRA PIN</label>
+                                                                            <input type="text" class="form-control" id="client_kra" placeholder="Eg. A0PASZY..">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="zip_code">Zip Code</label>
+                                                                            <input type="text" class="form-control" id="zip_code" placeholder="Eg. 01000-90130">
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="inputState">Logo</label>
+                                                                            <input type="file" class="form-control" id="client_logo" >
+                                                                        </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label for="client_type">Type</label>
+                                                                            <select id="client_type" class="form-control">
+                                                                                <option value="individual">Individual</option>
+                                                                                <option value="company">Company</option>
+                                                                                <option value="organisation">Organization</option>
+
+                                                                            </select>
                                                                         </div>
 
 
@@ -70,29 +84,12 @@
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
                                                             data-dismiss="modal">Close</button>
-                                                        <button type="submit" class="btn btn-primary">Add Bank Account</button>
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
                                                      </form>
                                                     </div>
                                                 </div>
 
-                                                    <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
 
-                                                        <h5 >Coming Soon !</h5>
-
-
-
-
-
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">Close</button>
-
-
-                                        </div>
-
-
-                                                    </div>
 
 
                                                 </div>
@@ -118,7 +115,7 @@
                                         </div>
 
                                         <div class="mb-2">
-                                            <a class="btn pt-0 pl-0 d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions"
+                                            <a class="btn pt-2 pl-1 d-inline-block d-md-none" data-toggle="collapse" href="#displayOptions"
                                                 role="button" aria-expanded="true" aria-controls="displayOptions">
                                                 Display Options
                                                 <i class="simple-icon-arrow-down align-middle"></i>
@@ -184,8 +181,11 @@
                                     <thead>
                                         <tr>
                                             <th>No.</th>
-                                            <th>Name</th>
-                                            <th>Percentage(%)</th>
+                                            <th>Quote No.</th>
+                                            <th>Date</th>
+                                            <th>Due</th>
+                                            <th>Status</th>
+                                            <th>Total</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -195,10 +195,22 @@
                                                 <p>1.</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted">VAT</p>
+                                                <p class="text-muted">#STW1234556</p>
                                             </td>
                                             <td>
-                                                <p class="text-muted">16</p>
+                                                <p class="text-muted">Startappz Limited</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-muted">05/05/24</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-muted">25/05/24</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-muted">Pending..</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-muted">2400 USD</p>
                                             </td>
                                             <td>
                                                 <div class="btn-group  mb-1">

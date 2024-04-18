@@ -88,11 +88,7 @@
                     <i class="simple-icon-tag"></i> <span class="d-inline-block">Purchase Summary</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <i class="simple-icon-basket"></i> <span class="d-inline-block">Supplier Summary</span>
-                </a>
-            </li>
+
                     </ul>
 
 
