@@ -69,69 +69,71 @@
                                     </div>
 
 
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="mb-2">
-                                                    <h1 style="font-size:30px;">Add Items</h1>
-                                                    <div class="top-right-button-container">
-                                                        <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" data-toggle="modal"
-                                                        data-target="#addTax"> <i class="simple-icon-plus align-middle"></i> ADD ITEM</button>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-2">
+                                                <h1 style="font-size:30px;">Add Items</h1>
+                                                <div class="top-right-button-container">
+                                                    <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" id="add_input"> <i class="simple-icon-plus align-middle"></i> ADD ITEM</button>
 
 
 
-                                                                    </div>
-
-
-                                                                    </div>
-                                                                    <div class="separator mb-5"></div>
                                                                 </div>
-                                        </div>
 
 
-
-
-
-                                    <div class="form-row">
-                                        <div class="form-group col-md-4">
-                                            <label for="email">Item Name</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Email">
-
-                                            <label for="email" class="mt-3">Item Description</label>
-                                            <textarea type="email" class="form-control" id="email" placeholder="Email">
-                                            </textarea>
-                                        </div>
-                                        <div class="form-group col-md-2">
-                                            <label>Quantity</label>
-                                            <input type="number" min="0" class="form-control" id="product_quantity" placeholder="">
-                                        </div>
-
-                                        <div class="form-group col-md-2">
-                                            <label>Rate</label>
-                                            <input type="number" min="0" class="form-control" id="product_rate" placeholder="">
-                                        </div>
-
-                                        <div class="form-group col-md-2">
-                                            <label for="client_type">Tax</label>
-                                            <select id="client_type" class="form-control">
-                                                <option value="">--Select--</option>
-                                                <option value="">VAT 6%</option>
-                                                <option value="">VAT 16%</option>
-                                                <option value="">VAT 20%</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="form-group px-3 col-md-1" >
-                                            <label for="client_type">Subtotal(USD)</label>
-                                            <p>100000</p>
-                                        </div>
-
-                                        <div class="form-group px-2 col-md-1 align-middle">
-                                            <p class="text-danger mx-3 mt-5"><i class="simple-icon-trash "></i></p>
-                                        </div>
-
-
-
+                                                                </div>
+                                                                <div class="separator mb-5"></div>
+                                                            </div>
                                     </div>
+
+
+
+
+
+                                        <div class="row " id="row1">
+                                            <div class="col-md-12 form-row form_field" >
+                                            <div class="form-group col-md-4">
+                                                <label for="email">Select Item</label>
+                                                <select id="product_select" class="form-control">
+                                                    <option value="">--Select--</option>
+                                                    <option value="">Iphone 6s</option>
+                                                    <option value="Joan Doe">Samsung Hard Disk</option>
+                                                    <option value="Melina Doe">Mac book</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-2">
+                                                <label>Quantity</label>
+                                                <input type="number" min="0" class="form-control" id="product_quantity" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <label>Rate</label>
+                                                <input type="number" min="0" class="form-control" id="product_rate" placeholder="">
+                                            </div>
+
+                                            <div class="form-group col-md-2">
+                                                <label for="client_type">Tax</label>
+                                                <select id="client_type" class="form-control">
+                                                    <option value="">--Select--</option>
+                                                    <option value="">VAT 6%</option>
+                                                    <option value="">VAT 16%</option>
+                                                    <option value="">VAT 20%</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group px-md-3 col-md-1" >
+                                                <label for="client_type">Subtotal(USD)</label>
+                                                <p>100000</p>
+                                            </div>
+
+                                            <div class="form-group px-md-2 col-md-1 align-middle pt-md-3" style="margin-top:18px;" >
+                                                <a class="text-white mx-md-3 mt-4 px-3 py-2 btn-primary remove_field" id="button1" style="border:none; border-radius:10px; "><i class="simple-icon-trash "></i></a>
+                                            </div>
+
+                                            </div>
+
+                                        </div>
 
                                     <div class="separator mb-5"></div>
 
@@ -193,7 +195,7 @@
 
                                         <div class="btn-group" role="group" aria-label="Basic example">
                                             <button type="button" class="btn  btn-primary">Submit</button>
-                                            <button type="button" class="btn  btn-primary">Send</button>
+                                            <button type="button" class="btn  btn-primary">Preview</button>
                                             <button type="button" class="btn  btn-primary">Cancel</button>
                                         </div>
 

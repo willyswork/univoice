@@ -24,17 +24,17 @@
         </ul>--->
         <ul class="list-unstyled" data-link="billing" id="billing">
             <li>
-                <a href="#">
+                <a href="invoices">
                     <i class="simple-icon-diamond"></i> <span class="d-inline-block">Invoices</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="receipts">
                     <i class="simple-icon-drawer"></i> <span class="d-inline-block">Receipts</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="quotations">
                     <i class="simple-icon-docs"></i> <span class="d-inline-block">Quotations</span>
                 </a>
             </li>
@@ -44,17 +44,17 @@
 
                     <ul class="list-unstyled" data-link="products" id="products">
                         <li>
-                            <a href="#">
+                            <a href="products">
                                 <i class="simple-icon-bag"></i> <span class="d-inline-block">Products</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="products_categories">
                                 <i class="simple-icon-grid"></i> <span class="d-inline-block">Product Categories</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="products_units">
                                 <i class="simple-icon-calculator"></i> <span class="d-inline-block">Product Units</span>
                             </a>
                         </li>
@@ -69,22 +69,22 @@
 
         <ul class="list-unstyled" data-link="reports" id="reports">
             <li>
-                <a href="#">
+                <a href="reports_activity">
                     <i class="simple-icon-graph"></i> <span class="d-inline-block">Activity Summary</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="reports_sales">
                     <i class="simple-icon-chart"></i> <span class="d-inline-block">Sales Summary</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="reports_purchase">
                     <i class="simple-icon-bag"></i> <span class="d-inline-block">Stock Summary</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="reports_stock">
                     <i class="simple-icon-tag"></i> <span class="d-inline-block">Purchase Summary</span>
                 </a>
             </li>
@@ -99,23 +99,23 @@
 
         <ul class="list-unstyled" data-link="settings" id="settings">
             <li>
-                <a href="#">
+                <a href="tax">
                     <i class="simple-icon-calculator"></i> <span class="d-inline-block">Tax Types</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="currency">
                     <i class="simple-icon-flag"></i> <span class="d-inline-block">Currency</span>
                 </a>
             </li>
 
             <li>
-                <a href="#">
+                <a href="payment">
                     <i class="simple-icon-credit-card"></i> <span class="d-inline-block">Payment Mode</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="settings">
                     <i class="simple-icon-settings"></i> <span class="d-inline-block">Profile Settings</span>
                 </a>
             </li>

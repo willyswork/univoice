@@ -16,8 +16,13 @@
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.rtl.only.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/component-custom-switch.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/perfect-scrollbar.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/dore.light.bluenavy.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2-bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/smart_wizard.min.css')}}" />
+
+
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/fullcalendar.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/dropzone.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/dataTables.bootstrap4.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/datatables.responsive.bootstrap4.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2.min.css') }}" />
@@ -27,6 +32,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/nouislider.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap-datepicker3.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/component-custom-switch.min.css') }}" />
+
     <link rel="stylesheet" href="{{ asset('assets/css/main.css')}}" />
 
     {{ $links ?? "" }}
@@ -69,10 +75,14 @@
     <script src="{{ asset('assets/js/vendor/nouislider.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/Sortable.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/dropzone.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.smartWizard.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.validate/additional-methods.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/mousetrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/glide.min.js') }}"></script>
-    <script src="{{ asset('assets/js/dore.script.js') }}"></script>
-    <script src="{{ asset('assets/js/scripts.js') }}"></script>
+    <script src="assets/js/dore.script.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
     {{$scripts ?? ""}}
 

@@ -42,9 +42,13 @@
                 </li>
 
                 <li>
-                    <a href="#logout">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                    <a href="route('logout')" onclick="event.preventDefault();
+                    this.closest('form').submit();">
                         <i class="iconsminds-right"></i> Log Out
                     </a>
+                    </form>
                 </li>
             </ul>
         </div>

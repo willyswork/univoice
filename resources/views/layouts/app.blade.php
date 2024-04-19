@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/perfect-scrollbar.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/select2-bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/smart_wizard.min.css')}}" />
+
 
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/fullcalendar.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/dropzone.min.css') }}" />
@@ -91,11 +93,76 @@
     <script src="{{ asset('assets/js/vendor/bootstrap-datepicker.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/Sortable.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/dropzone.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.smartWizard.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.validate/additional-methods.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/mousetrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/glide.min.js') }}"></script>
     <script src="assets/js/dore.script.js"></script>
     <script src="assets/js/scripts.js"></script>
 
+
+    <script>
+        $(document).ready(function(){
+            var i=1;
+
+            $('#add_input').click(function(){
+
+                i++;
+                html = ` <div class="col-md-12 form-row form_field" id="row${i}">
+                                    <div class="form-group col-md-4">
+                                        <label for="email">Select Item</label>
+                                        <select id="product_select" class="form-control">
+                                            <option value="">--Select--</option>
+                                            <option value="">Iphone 6s</option>
+                                            <option value="Joan Doe">Samsung Hard Disk</option>
+                                            <option value="Melina Doe">Mac book</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label>Quantity</label>
+                                        <input type="number" min="0" class="form-control" id="product_quantity" placeholder="">
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label>Rate</label>
+                                        <input type="number" min="0" class="form-control" id="product_rate" placeholder="">
+                                    </div>
+
+                                    <div class="form-group col-md-2">
+                                        <label for="client_type">Tax</label>
+                                        <select id="client_type" class="form-control">
+                                            <option value="">--Select--</option>
+                                            <option value="">VAT 6%</option>
+                                            <option value="">VAT 16%</option>
+                                            <option value="">VAT 20%</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group px-3 col-md-1" >
+                                        <label for="client_type">Subtotal(USD)</label>
+                                        <p>100000</p>
+                                    </div>
+
+                                    <div class="form-group px-md-2 col-md-1 align-middle pt-md-3" style="margin-top:18px;" >
+                                        <a class="text-white mx-md-3 mt-4 px-3 py-2 btn-primary remove_field" id="button${i}" style="border:none; border-radius:10px; "><i class="simple-icon-trash "></i></a>
+                                    </div>
+
+                                    </div>
+`;
+                $('#row1').append(html);
+
+
+            });
+
+            $(document).on('click','.remove_field', function(e){
+                $(this).closest('.form_field').remove();
+
+            });
+
+        });
+        </script>
 
 
     {{$scripts ?? ""}}

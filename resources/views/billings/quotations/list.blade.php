@@ -182,6 +182,7 @@
                                         <tr>
                                             <th>No.</th>
                                             <th>Quote No.</th>
+                                            <th>Client</th>
                                             <th>Date</th>
                                             <th>Due</th>
                                             <th>Status</th>

@@ -86,7 +86,7 @@
 
                                     <div class="btn-group" role="group" aria-label="Basic example">
                                         <button type="button" class="btn  btn-primary">Submit</button>
-                                        <button type="button" class="btn  btn-primary">Send</button>
+                                        <button type="button" class="btn  btn-primary">Preview</button>
                                         <button type="button" class="btn  btn-primary">Cancel</button>
                                     </div>
 

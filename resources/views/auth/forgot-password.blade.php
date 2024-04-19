@@ -1,25 +1,46 @@
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-    </div>
+    <x-slot name="titles">
+        Forgot Password
+    </x-slot>
 
     <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+    <div class="fixed-background"></div>
+    <main>
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-12 col-md-10 mx-auto my-auto">
+                    <div class="card auth-card">
+                        <div class="position-relative image-side ">
 
-    <form method="POST" action="{{ route('password.email') }}">
-        @csrf
+                            <p class=" text-white h2">GET YOUR ACCOUNT BACK</p>
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                            <p class="white mb-0">
+                                If you forgot your password please enter the details needs to retrieve your account.
+
+                            </p>
+                        </div>
+                        <div class="form-side">
+                            <a href="#">
+                                <span style="margin-left: -10px;"><img class="mb-4" src="assets/logos/fulllogo.png" height="100" /></span>
+                            </a>
+
+                            <form>
+                                <div class="form-group ">
+                                    <label >Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Eg. johndoe@gmail.com">
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <button class="btn btn-primary btn-lg btn-shadow mt-4" type="submit">RESET</button>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
-            </x-primary-button>
-        </div>
-    </form>
+    </main>
 </x-guest-layout>
