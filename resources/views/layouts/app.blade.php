@@ -50,7 +50,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body id="app-container" class="menu-sub-hidden ">
+<body id="app-container" class="menu-default show-spinner">
     <div class="min-h-screen bg-gray-100">
         @include('layouts.navigation')
 

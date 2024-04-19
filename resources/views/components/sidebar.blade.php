@@ -4,18 +4,18 @@
         <div class="scroll">
             <ul class="list-unstyled">
                 <li>
-                    <a href="#dashboard">
+                    <a href="{{ route('dashboard') }}">
                         <i class="iconsminds-shop-4"></i>
                         <span>Dashboards</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#products">
+                    <a href="#">
                         <i class="iconsminds-shopping-cart"></i> Products
                     </a>
                 </li>
                 <li>
-                    <a href="#clients">
+                    <a href="clients">
                         <i class="iconsminds-user"></i> Clients
                     </a>
                 </li>

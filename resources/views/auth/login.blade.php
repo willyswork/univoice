@@ -20,7 +20,7 @@
                             <p class="white mb-0">
                                 Please use your credentials to login.
                                 <br>If you are not a member, please
-                                <a href="register"  style="font-size:16px;color:white !important;text-decoration:underline;">Register</a>.
+                                <a href="{{ route('register') }}"  style="font-size:16px;color:white !important;text-decoration:underline;">Register</a>.
                             </p>
                         </div>
                         <div class="form-side">

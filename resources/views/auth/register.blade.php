@@ -18,7 +18,7 @@
                             <p class="white mb-0">
                                 Please create  an account with us to enjoy the services.
                                 <br>If you are a member, please
-                                <a href="#login"  style="font-size:16px;color:white !important;text-decoration:underline;">Login</a>.
+                                <a href="{{ route('login') }}"  style="font-size:16px;color:white !important;text-decoration:underline;">Login</a>.
                             </p>
                         </div>
                         <div class="form-side" style="height:500px; overflow-y:scroll;">

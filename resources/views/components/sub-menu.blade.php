@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li>
-                <a href="receipts">
+                <a href=" receipts">
                     <i class="simple-icon-drawer"></i> <span class="d-inline-block">Receipts</span>
                 </a>
             </li>
@@ -49,15 +49,11 @@
                             </a>
                         </li>
                         <li>
-                            <a href="products_categories">
+                            <a href="'products_categories">
                                 <i class="simple-icon-grid"></i> <span class="d-inline-block">Product Categories</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="products_units">
-                                <i class="simple-icon-calculator"></i> <span class="d-inline-block">Product Units</span>
-                            </a>
-                        </li>
+
 
                                 </ul>
 
@@ -68,24 +64,20 @@
 
 
         <ul class="list-unstyled" data-link="reports" id="reports">
-            <li>
-                <a href="reports_activity">
-                    <i class="simple-icon-graph"></i> <span class="d-inline-block">Activity Summary</span>
-                </a>
-            </li>
+
             <li>
                 <a href="reports_sales">
-                    <i class="simple-icon-chart"></i> <span class="d-inline-block">Sales Summary</span>
+                    <i class="simple-icon-chart"></i> <span class="d-inline-block">Invoices Summary</span>
                 </a>
             </li>
             <li>
                 <a href="reports_purchase">
-                    <i class="simple-icon-bag"></i> <span class="d-inline-block">Stock Summary</span>
+                    <i class="simple-icon-bag"></i> <span class="d-inline-block">Receipts Summary</span>
                 </a>
             </li>
             <li>
                 <a href="reports_stock">
-                    <i class="simple-icon-tag"></i> <span class="d-inline-block">Purchase Summary</span>
+                    <i class="simple-icon-tag"></i> <span class="d-inline-block">Quotations Summary</span>
                 </a>
             </li>
 

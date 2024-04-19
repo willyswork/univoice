@@ -157,7 +157,7 @@
         <div class="user d-inline-block">
             <button class="btn btn-empty p-0" type="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                <span class="name">Sarah Kortney</span>
+                <span class="name">{{ Auth::user()->name;}}</span>
                 <span>
                     <img alt="Profile Picture" src="{{ asset('assets/img/profiles/l-1.jpg') }}" />
                 </span>
