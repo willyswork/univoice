@@ -1,7 +1,11 @@
 <?php
 
 use App\Http\Controllers\ClientsController;
+use App\Http\Controllers\InvoicesController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReceiptsController;
+use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,73 +27,22 @@ Route::get('/', function () {
 /*Route::get('/dashboard', function () {
     return view('dashboard');
 });*/
-Route::get('/settings', function () {
-    return view('profile.profiles')->name('settings.profile');
-});
-Route::get('/tax', function () {
-    return view('settings.tax')->name('settings.tax');
-});
-Route::get('/currency', function () {
-    return view('settings.currency')->name('settings.currency');
-});
 
-Route::get('/payment', function () {
-    return view('settings.payment')->name('settings.payment');
-});
 Route::get('/clients', function () {
-    return view('clients.clients')->name('clients');
+    return view('clients.list');
 });
 
 
-Route::get('/products', function () {
-    return view('products.products')->name('products');
-});
-
-Route::get('/products_categories', function () {
-    return view('products.product_categories')->name('categories');
-});
-
-Route::get('/products_units', function () {
-    return view('products.product_units');
-});
-
-Route::get('/invoices', function () {
-    return view('billings.invoices.list')->name('invoices');
-});
-Route::get('/invoices_create', function () {
-    return view('billings.invoices.create')->name('invoices.create');
-});
-
-Route::get('/invoices_preview', function () {
-    return view('billings.invoices.preview')->name('invoices.preview');
-});
 
 
-Route::get('/receipts', function () {
-    return view('billings.receipts.list')->name('receipts');
-});
-Route::get('/receipts_create', function () {
-    return view('billings.receipts.create')->name('receipts.create');
-});
 
 Route::get('/quotations', function () {
-    return view('billings.quotations.list')->name('quotations');
+    return view('billings.quotations.list');
 });
 Route::get('/quotations_create', function () {
-    return view('billings.quotations.create')->name('quotations.create');
+    return view('billings.quotations.create');
 });
-Route::get('/reports_activity', function () {
-    return view('reports.activity.view');
-});
-Route::get('/reports_sales', function () {
-    return view('reports.sales.view')->name('invoices.summary');
-});
-Route::get('/reports_purchase', function () {
-    return view('reports.purchase.view')->name('receipts.summary');
-});
-Route::get('/reports_stock', function () {
-    return view('reports.stock.view')->name('quotations.summary');
-});
+
 
 
 Route::get('/dashboard', function () {
@@ -101,6 +54,47 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [SettingsController::class, 'profile'])->name('settings.profile');
+    Route::get('/tax', [SettingsController::class, 'tax'])->name('settings.tax');
+    Route::get('/currency', [SettingsController::class, 'currency'])->name('settings.currency');
+    Route::get('/payment', [SettingsController::class, 'payment'])->name('settings.payment');
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/invoices', [InvoicesController::class, 'list'])->name('invoices.list');
+    Route::get('/invoices_create', [InvoicesController::class, 'create'])->name('invoices.create');
+    Route::get('/invoices_preview', [InvoicesController::class, 'preview'])->name('invoices.preview');
+
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/receipts', [ReceiptsController::class, 'list'])->name('receipts.list');
+    Route::get('/receipts_create', [ReceiptsController::class, 'create'])->name('receipts.create');
+    Route::get('/receipts_preview', [ReceiptsController::class, 'preview'])->name('receipts.preview');
+
+});
+
+
+
+
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/products', [ProductController::class, 'view'])->name('products.view');
+    Route::get('/categories', [ProductController::class, 'categories'])->name('products.categories');
+
+});
+
+Route::middleware('auth')->group(function () {
+    Route::get('/reports_invoices', [ReportsController::class, 'invoices'])->name('reports.invoices');
+    Route::get('/reports_receipts', [ReportsController::class, 'receipts'])->name('reports.receipts');
+    Route::get('/reports_quotations', [ReportsController::class, 'quotations'])->name('reports.quotations');
+
+});
+
+
 
 //Route::get('/settings', [SettingsController::class, 'create']);
 //Route::get('/settings/store', [SettingsController::class, 'store']);

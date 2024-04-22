@@ -2,7 +2,7 @@
 
 
     <x-slot name="titles">
-     Sales Summary
+     Invoices Summary
     </x-slot>
 
     <x-sidebar/>
@@ -12,7 +12,7 @@
          <div class="row  ">
              <div class="col-12">
 
-                 <h1>Sales Summary</h1>
+                 <h1>Invoices Summary</h1>
 
                  <div class="top-right-button-container">
                     <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" > <i class="simple-icon-printer align-middle"></i>  PRINT PDF</button>
@@ -29,7 +29,7 @@
             <div class="col-12 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Monthly Sales</h5>
+                        <h5 class="card-title">Purchase</h5>
                         <div class="dashboard-line-chart chart">
                             <canvas id="salesChart"></canvas>
                         </div>

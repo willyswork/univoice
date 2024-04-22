@@ -14,11 +14,26 @@ use Illuminate\Support\Str;
 
 class SettingsController extends Controller
 {
+    public function profile() {
+        return view('profile.view');
+    }
+
+    public function tax() {
+        return view('settings.tax.view');
+    }
+    public function currency() {
+        return view('settings.currency.view');
+    }
+
+    public function payment() {
+        return view('settings.payment.view');
+    }
+
     public function create()
     {
 
 
-        $tax = Settings::with("taxes")->get();
+       /* $tax = Settings::with("taxes")->get();
         $currency = Settings::with("currencies")->get();
         $bank = Settings::with("banks")->get();
         $uuid = Auth::user()->uuid;
@@ -29,13 +44,13 @@ class SettingsController extends Controller
 
 
 
-        return [$tax,$currency,$bank,$profile];
+        return [$tax,$currency,$bank,$profile];*/
     }
 
     public function store(){
 
 
-          //Settings
+        /*  //Settings
           $settings = new Settings();
           $settings->name = "Willys Settings";
           $settings->uuid =Str::uuid();
@@ -56,7 +71,7 @@ class SettingsController extends Controller
           $profile->country = $country;
           $profile->phonenumber = $phonenumber;
 
-          $profile->update();*/
+          $profile->update();
 
 
 
@@ -97,7 +112,7 @@ class SettingsController extends Controller
 
 
 
-          return [$settings,$tax,$currency,$bank, $message];
+          return [$settings,$tax,$currency,$bank, $message];*/
 
     }
 }

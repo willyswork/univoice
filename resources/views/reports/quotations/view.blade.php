@@ -2,7 +2,7 @@
 
 
     <x-slot name="titles">
-        Stock Summary
+        Quotation Summary
     </x-slot>
 
     <x-sidebar/>
@@ -12,7 +12,7 @@
          <div class="row  ">
              <div class="col-12">
 
-                 <h1>Stock Summary</h1>
+                 <h1>Quotation Summary</h1>
 
                  <div class="top-right-button-container">
                     <button type="button" class="btn btn-primary btn-lg top-right-button mr-1" > <i class="simple-icon-printer align-middle"></i>  PRINT PDF</button>

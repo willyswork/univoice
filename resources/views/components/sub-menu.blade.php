@@ -24,17 +24,17 @@
         </ul>--->
         <ul class="list-unstyled" data-link="billing" id="billing">
             <li>
-                <a href="invoices">
+                <a href="{{ route('invoices.list') }}">
                     <i class="simple-icon-diamond"></i> <span class="d-inline-block">Invoices</span>
                 </a>
             </li>
             <li>
-                <a href=" receipts">
+                <a href="{{ route('receipts.list') }}">
                     <i class="simple-icon-drawer"></i> <span class="d-inline-block">Receipts</span>
                 </a>
             </li>
             <li>
-                <a href="quotations">
+                <a href="{{ route('quotations.list') }}">
                     <i class="simple-icon-docs"></i> <span class="d-inline-block">Quotations</span>
                 </a>
             </li>
@@ -44,12 +44,12 @@
 
                     <ul class="list-unstyled" data-link="products" id="products">
                         <li>
-                            <a href="products">
+                            <a href="{{ route('products.view') }}">
                                 <i class="simple-icon-bag"></i> <span class="d-inline-block">Products</span>
                             </a>
                         </li>
                         <li>
-                            <a href="'products_categories">
+                            <a href="{{ route('products.categories') }}">
                                 <i class="simple-icon-grid"></i> <span class="d-inline-block">Product Categories</span>
                             </a>
                         </li>
@@ -66,18 +66,18 @@
         <ul class="list-unstyled" data-link="reports" id="reports">
 
             <li>
-                <a href="reports_sales">
-                    <i class="simple-icon-chart"></i> <span class="d-inline-block">Invoices Summary</span>
+                <a href="{{ route('reports.invoices') }}">
+                    <i class="simple-icon-chart"></i> <span class="d-inline-block">Invoices Reports</span>
                 </a>
             </li>
             <li>
-                <a href="reports_purchase">
-                    <i class="simple-icon-bag"></i> <span class="d-inline-block">Receipts Summary</span>
+                <a href="{{ route('reports.receipts') }}">
+                    <i class="simple-icon-bag"></i> <span class="d-inline-block">Receipts Reports</span>
                 </a>
             </li>
             <li>
-                <a href="reports_stock">
-                    <i class="simple-icon-tag"></i> <span class="d-inline-block">Quotations Summary</span>
+                <a href="{{ route('reports.quotations') }}">
+                    <i class="simple-icon-tag"></i> <span class="d-inline-block">Quotations Reports</span>
                 </a>
             </li>
 
@@ -91,23 +91,23 @@
 
         <ul class="list-unstyled" data-link="settings" id="settings">
             <li>
-                <a href="tax">
+                <a href="{{ route('settings.tax') }}">
                     <i class="simple-icon-calculator"></i> <span class="d-inline-block">Tax Types</span>
                 </a>
             </li>
             <li>
-                <a href="currency">
+                <a href="{{ route('settings.currency') }}">
                     <i class="simple-icon-flag"></i> <span class="d-inline-block">Currency</span>
                 </a>
             </li>
 
             <li>
-                <a href="payment">
+                <a href="{{ route('settings.payment') }}">
                     <i class="simple-icon-credit-card"></i> <span class="d-inline-block">Payment Mode</span>
                 </a>
             </li>
             <li>
-                <a href="settings">
+                <a href="{{ route('settings.profile') }}">
                     <i class="simple-icon-settings"></i> <span class="d-inline-block">Profile Settings</span>
                 </a>
             </li>

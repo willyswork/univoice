@@ -94,12 +94,12 @@
     <script src="{{ asset('assets/js/vendor/Sortable.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/dropzone.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/jquery.smartWizard.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/jquery.validate.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.validate/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/jquery.validate/additional-methods.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/mousetrap.min.js') }}"></script>
     <script src="{{ asset('assets/js/vendor/glide.min.js') }}"></script>
-    <script src="assets/js/dore.script.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="{{ asset('assets/js/dore.script.js') }}"></script>
+   <script src="{{ asset('assets/js/scripts.js') }}"></script>
 
 
     <script>
